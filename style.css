@@ -1,0 +1,115 @@
+@import url(reset.css);
+
+body {
+    min-height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 150px;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.title h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+.wrapper:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.wrapper label {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    position: relative;
+}
+
+.wrapper label::after {
+    content: url(./assets/plus-solid.svg);
+    position: absolute;
+    right: -15px;
+    top: 5px;
+    width: 0px;
+    transition: all 0.2s;
+}
+
+.wrapper input:checked+label::after {
+    transform: rotate(45deg);
+}
+
+
+.main__inner:hover label::after {
+    width: 20px;
+    transition: all 0.2s;
+}
+
+.wrapper input {
+    display: none;
+}
+
+
+.wrapper input:checked+label img {
+    width: 50%;
+}
+
+.wrapper input:checked+label span {
+    color: black;
+}
+
+
+
+.wrapper label:hover img {
+    width: 50%;
+    transition: all 0.2s;
+}
+
+.wrapper label:hover {
+    cursor: pointer;
+}
+
+.wrapper span {
+    font-size: 25px;
+    font-weight: 500;
+    color: blue;
+}
+
+.wrapper img {
+    padding-top: 30px;
+    width: 0px;
+    margin: 0 auto;
+    transition: all 0.2s;
+}
+
+
+
+hr {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 20px;
+    border: none;
+    border-top: 1px solid rgb(179, 179, 179);
+}
+
+.main__inner:hover span {
+    color: black;
+}
+
+.main__inner:hover {
+    cursor: pointer;
+}
