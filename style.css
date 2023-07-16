@@ -113,3 +113,39 @@ hr {
 .main__inner:hover {
     cursor: pointer;
 }
+
+
+
+@media(max-width:835px) {
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .wrapper span {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:400px) {
+
+    body {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+    .wrapper span {
+        font-size: 20px;
+    }
+
+    .main__inner:hover {
+        cursor: default;
+    }
+
+    .wrapper label:hover {
+        cursor: default;
+    }
+}
